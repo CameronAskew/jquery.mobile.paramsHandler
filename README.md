@@ -3,7 +3,7 @@ jquery.mobile.paramsHandler
 
 A plug-in for adding URL parameters to jQuery Mobile pages
 
-Compatible with jQuery Mobile 1.4+
+Compatible with jQuery Mobile 1.4+<br />
 Under the MIT license (basically use it as you please)
 
 <b>EXAMPLE USAGE</b>
