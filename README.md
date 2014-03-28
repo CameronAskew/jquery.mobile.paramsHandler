@@ -3,13 +3,20 @@ jquery.mobile.paramsHandler
 
 A plug-in for adding URL parameters to jQuery Mobile pages.
 
-<ol>
-<li>Download <b>jquery.mobile.paramsHandler-1.4.2.js</b> and add it to your page (after the jquery mobile library)</li>
-<li>Sequentially add 
-</ol>
-
 Compatible with jQuery Mobile 1.4+<br />
 Under the MIT license (basically use it as you please)
+
+
+The URL parameters are maintained within the URL so page refreshes will work fine. Additionally, if someone navigates directly to a page with parameters, everything will work appropriately.
+
+
+<b>Steps to use</b>
+<ol>
+<li>Download <b>jquery.mobile.paramsHandler-1.4.2.js</b> and add it to your page (after the jquery mobile library)</li>
+<li>Add pages with the $.mobile.paramsHandler.addPage(pageId, requiredParams, optionalParams, callback) and then call $.mobile.paramsHandler.init()</li>
+<li>You can now go to those pages and when those pages are opened, your callback will be fired and the URL parameters will be given to you</li>
+</ol>
+
 
 <b>EXAMPLE USAGE</b>
 
