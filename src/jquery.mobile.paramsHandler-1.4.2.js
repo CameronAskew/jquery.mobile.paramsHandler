@@ -62,10 +62,6 @@ $.mobile.paramsHandler = {
 
             e.preventDefault();
         });
-    },
-
-    currentUrlParams: function () {
-        return getUrlVars(window.location.href);
     }
 };
 
