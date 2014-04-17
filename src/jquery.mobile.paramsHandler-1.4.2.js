@@ -20,7 +20,7 @@ $.mobile.paramsHandler = {
             for (var i in pages) {
 
                 var page = pages[i];
-                var re = "^#" + page.id;
+                var re = "^#" + page.id + "(\?|$)";
 
                 if (u.hash.search(re) !== -1) {
                     pageMatch = page;
