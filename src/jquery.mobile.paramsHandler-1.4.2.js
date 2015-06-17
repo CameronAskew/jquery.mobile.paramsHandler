@@ -58,7 +58,11 @@ $.mobile.paramsHandler = {
 
             $(":mobile-pagecontainer").pagecontainer("change", "#" + pageMatch.id, data.options);
 
-            window.history.replaceState(null, null, u.href);
+            if (location.href != u.href && location.href.split('?')[0]===u.href.split('?')[0] && location.href.split('?').length > 1) {
+                window.history.pushState(null, null, u.href);
+            } else {
+                window.history.replaceState(null, null, u.href);
+            }
 
             e.preventDefault();
         });
